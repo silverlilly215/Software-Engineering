@@ -1,0 +1,254 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Home Container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #CAF0F8;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background: linear-gradient(to right, #03045e, #023e8a);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand .navbar-text {
+  color: #fff;
+  font-weight: bold;
+  padding: 100px 50px;
+}
+/* Navbar links */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #90e0ef;
+}
+
+.navbar-links .btn {
+  background-color: #00b4d8;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-links .btn:hover {
+  background-color: #48cae4;
+}
+
+/* Header Section */
+.home-header {
+  text-align: center;
+  margin: 50px 0;
+  background: linear-gradient(45deg, #023e8a, #00b4d8);
+  color: white;
+  padding: 80px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.home-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.home-header p {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* Scholarship Section */
+.scholarship-section {
+  padding: 50px 30px;
+  text-align: center;
+  background-color: #CAF0F8;
+}
+
+.scholarship-category {
+  margin-bottom: 40px;
+}
+
+.scholarship-category h3 {
+  font-size: 28px;
+  color: #03045e;
+  margin-bottom: 20px;
+}
+
+.scholarship-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.scholarship-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.scholarship-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.scholarship-card h4 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.scholarship-card p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.scholarship-card .btn {
+  background-color: #00b4d8;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.scholarship-card .btn:hover {
+  background-color: #48cae4;
+  transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease;
+}
+
+.modal.open {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.modal form div {
+  margin-bottom: 15px;
+}
+
+.modal form label {
+  font-size: 16px;
+  color: #333;
+}
+
+.modal form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.modal .btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #023e8a;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal .btn:hover {
+  background-color: #0077b6;
+}
+
+.modal .close-btn {
+  background-color: #ddd;
+  color: #333;
+  margin-top: 15px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.modal .close-btn:hover {
+  background-color: #bbb;
+}
+
+/* Footer */
+.home-footer {
+  background-color: #023e8a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.home-footer p {
+  font-size: 16px;
+}

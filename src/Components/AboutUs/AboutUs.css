@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Body and Container */
+  .home-container {
+    background-color: #f5f3f4; /* Background color */
+    color: #161a1d; /* Text color */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .navbar {
+    background-color: #660708; /* Dark red */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand img {
+    width: 150px; /* Adjust logo size */
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-links li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-links a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .navbar-links a:hover {
+    color: #e5383b; /* Lighter red for hover */
+  }
+  
+  /* Header Section */
+  .home-header {
+    background-color: #660708;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .home-header h1 {
+    font-size: 3rem;
+  }
+  
+  .home-header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  /* About Us Section */
+  .about-section {
+    padding: 60px 20px;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+  }
+  
+  .about-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    padding: 20px;
+  }
+  
+  .about-text h2 {
+    color: #660708; /* Dark red */
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .about-text ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  .about-text ul li {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .about-image {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer */
+  .home-footer {
+    background-color: #161a1d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .home-footer p {
+    font-size: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-container {
+      flex-direction: column;
+    }
+    .about-text,
+    .about-image {
+      flex: none;
+      width: 100%;
+    }
+  }
+  
