@@ -47,7 +47,7 @@ const HomePage = () => {
   </li>
   <li>
     <Link to="/aboutus" aria-label="About Us">
-      <FaInfoCircle size={20} /> About Us
+      <FaInfoCircle size={20} /> About
     </Link>
   </li>
   <li>
